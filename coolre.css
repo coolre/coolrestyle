@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+/*----------通用----------*/
+ul,ol,li,p,h1,h2,h3,h4,h5,form,table,td,img,div,a,dl,dt,dd{margin:0;padding:0;border:0;}
+body,select,input{padding:0;margin:0;text-align:left;font-size:12px;font-family:"宋体","Arial";}
+body{color:#000;}
+ul,li,ol{list-style-type:none;}
+input{outline:none;}
+img{vertical-align:bottom;}
+table{border-collapse:collapse;}
+a img{border:none;}
+a{color:#000;text-decoration:none;}
+a:hover{text-decoration:none;}
+.clear{ clear:both;}
+.cl:after{ content:""; display:block;visibility:hidden; height:0; clear:both;}
+.cl {zoom:1;}
+.fl{float:left; display:inline;}
+.fr{float:right; display:inline;}
+
+h1,h2,h3,h4,h5,h6 { font:12px normal; }
+
+body { min-width: 980px;}
+.wrap{ position:relative;width:980px; margin:0px auto;}
+
+.top{ height:100px; }
+.toplink{ float:right; margin-top:5px; margin-right:2px;}
+.toplink a{ color:#999;}
+
+#header{position:relative;float:left;}
+#container{position:relative;width:980px; float:left;}
+#main{ position:relative;width:980px; float:left; background:#FFF;}
+#footer{ position:relative;width:980px;height:60px;float:left;}
+.boot{ padding:6px;}
+
+
+
+/*nav*/	
+#nav {
+float:left;
+width:980px;
+white-space:nowrap;
+text-align:center;
+clear:both;position: relative;z-index:1005;
+/*background: #025b9d url(img/hw/line.gif) bottom center no-repeat; */
+padding-bottom:1px;
+}
+
+#nav ul,#nav ul li ul{
+list-style-type:none;
+}
+#nav li{
+background: transparent none;
+float:left;
+position:relative;}
+#nav li.selected a{
+background-position: right bottom;
+color:#FFF!important}
+#nav li ul {
+display:none;
+position:absolute;
+top:39px;
+left:0;
+margin-top:1px;
+width:120px;}
+
+#nav li ul li a{ font-weight:normal;}
+/*		&#757;#div_nav li ul li ul {
+display:none;
+position:absolute; 
+top:0px;
+left:130px; 
+margin-top:0;
+margin-left:1px;
+width:120px;
+}*/
+#nav a {
+color:#FFF;
+display:block;
+float:left;
+font-size:14px;
+font-weight:700;
+width:108px;
+height:40px;
+line-height:40px;
+/*text-transform:uppercase;*/
+text-decoration:none;
+white-space:nowrap;
+/*background: transparent url(img/hw/bkg-menu.jpg) no-repeat right top;*/
+}
+/*		#div_nav .last a{
+padding:0 20px !important;
+padding:0 24px
+} */
+#nav .last a{
+/*background:  /*transparent* / #008cd6 url(img/bkg-menu-last.png) no-repeat right top;*/
+width:116px;
+}
+#nav a:hover {background-position: right center;text-decoration: none;}
+
+/**/
+/*=================幻灯片样式===================*/
+.sliderBtn { background:url("img/btnico/sprite.png") no-repeat; cursor: pointer; height: 100px; position:relative; top:30%; z-index:100; width:45px;}
+#prevBtn { left:0; float:left;}
+#nextBtn { background-position:right top; right:0; float:right;}
+#btnList { height:25px; position:absolute; bottom:5px; padding:0 10px 0 10px;}
+/*===============数字按钮默认样式================*/
+.num { width:22px; height:22px; line-height:25px; text-align:center; cursor:pointer; margin-left:10px; background:#90EE90; float:right; border:1px solid #ccc; overflow:hidden;}
+.num_act { width:22px; height:22px; line-height:25px; text-align:center; cursor:pointer; margin-left:10px; background:#EEB422;float:right; border:1px solid #ccc; overflow:hidden;}
+.num_hover { width:22px; height:22px; line-height:25px; text-align:center; cursor:pointer; margin-left:10px; background:#FFAEB9;float:right; border:1px solid #ccc; overflow:hidden;}
+/*=====================↓↓↓幻灯片数字按钮扩展↓↓↓==================*/
+/* square */
+.square { width:11px; height:11px; float:right; background:#999; cursor:pointer; margin-right:5px; overflow:hidden;}
+.square_act { width:11px; height:11px; float:right; background:#ADD8E6; cursor:pointer; margin-right:5px; overflow:hidden;}
+.square_hover { width:11px; height:11px; float:right; background:blue; cursor:pointer; margin-right:5px; overflow:hidden;}
+/* circle */
+.circle { width:12px; height:13px; float:right; background:url(../images/btnico/circle.png) 0 0 no-repeat; cursor:pointer; margin-right:5px; overflow:hidden;}
+.circle_act { width:13px; height:13px; float:right; background:url(../images/btnico/circle.png) 0 -13px no-repeat; cursor:pointer; margin-right:5px; overflow:hidden;}
+.circle_hover { width:13px; height:13px; float:right; background:url(../images/btnico/circle.png) 0 -26px no-repeat; cursor:pointer; margin-right:5px; overflow:hidden;}
+/* roundness */
+.roundness { width:12px; height:12px; float:right; background:url(../images/btnico/roundness.png) no-repeat; cursor:pointer; margin-right:5px; overflow:hidden;}
+.roundness_act { width:13px; height:13px; float:right; background:url(../images/btnico/roundness.png) 0 -12px no-repeat; cursor:pointer; margin-right:5px; overflow:hidden;}
+.roundness_hover { width:13px; height:13px; float:right; background:url(../images/btnico/roundness.png) 0 -24px no-repeat; cursor:pointer; margin-right:5px; overflow:hidden;}
+/* rectangle */
+.rectangle { width:25px; height:10px; float:right; background:#D15FEE; cursor:pointer; margin-right:5px; opacity:0.7; overflow:hidden;}
+.rectangle_act { width:25px; height:10px; float:right; background:#CDCD00; cursor:pointer; margin-right:5px; overflow:hidden;}
+.rectangle_hover { width:25px; height:10px; float:right; background:blue; cursor:pointer; margin-right:5px; overflow:hidden;}
+/*=================================================*/
+
+#ShowPath{ padding:0 10px; margin-top:10px;}
+#newsclass{padding:10px 40px;}
+
+#listmain{ padding:10px 70px;}
+
+#Content{ padding:10px 15px;}
+#ShowPath{padding-left:20px; background:url(images/homeIcon.png) no-repeat;}
+#articletop{ text-align:center;/*margin-top:10px*/;}
+	.ArticleTitle{ height:40px;  background: url(images/title_bg.jpg) top no-repeat center;font-size:24px; color:#105B49; font-weight:bold;}
+	.ArticleSubheading{ line-height:16px;}
+	.ArticleInfo{ text-align:right; font-size:12px; line-height:20px; color:#666; background:#f2f2f2;  }
+	.ArticleInfo a{ color:#666;}
+	.pageprint{ margin-left:20px;}
+#PrevArticle li{ margin-top:5px;}
+#ArticleContent{font-size:18px; color:#000; line-height:1.6em; padding:40px 20px;background: url(images/amoytop.jpg) no-repeat top right;
+				border:#ddd solid 1px;}
+#listContent{font-size:14px; color:#000; line-height:28px; padding:20px;background: url(images/amoytop.jpg) no-repeat top right;
+				border:#ddd solid 1px;}
+#ClassName{font-size:24px; color:#105B49; font-weight:bold; margin-bottom:20px;}
+#ArticleContent p{ margin:5px; /*text-indent:2em;*/}
+.aboutContent img{
+			margin-left:2em;
+			background-color: #fff;
+			border: 1px solid #a9a9a9;
+			padding: 4px;}
